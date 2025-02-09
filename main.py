@@ -29,7 +29,7 @@ def buscar_vuelos(origen: str, destino: str, fecha: str, db: Session = Depends(g
     return crud.buscar_vuelos(db, origen, destino, fecha)
 
 @app.post("/api/reservas")
-def reservar_vuelo(reserva: schemas.ReservaCreate, db: Session = Depends(get_db)):
+def reservar_vuelo(reserva: schemas.ReservaCreate, db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
     return crud.reservar_vuelo(db, reserva)
 
 @app.delete("/api/reservas/{id}")

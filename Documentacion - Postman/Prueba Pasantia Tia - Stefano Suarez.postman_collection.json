@@ -1,0 +1,541 @@
+{
+	"info": {
+		"_postman_id": "b9f5563b-e6ca-449c-a8bb-35384ca91723",
+		"name": "Prueba Pasantia Tia - Stefano Suarez",
+		"description": "Recopilatorio de las evidencias de las APIs solicitadas:\n\n\\- Buscar Vuelos\n\n\\- Autenticacion - Creacion de usuario\n\n\\- Autenticacion - Inicio de sesion\n\n\\- Reservar Vuelo\n\n\\- Cancelar Reserva\n\n\\- Listar Reservas de Usuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31768462"
+	},
+	"item": [
+		{
+			"name": "Buscar Vuelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/vuelos?origen=Seattle (SEA)&destino=Barcelona (BCN)&fecha=2025-02-27",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vuelos"
+					],
+					"query": [
+						{
+							"key": "origen",
+							"value": "Seattle (SEA)"
+						},
+						{
+							"key": "destino",
+							"value": "Barcelona (BCN)"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-02-27"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Buscar Vuelos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/vuelos?origen=Seattle (SEA)&destino=Barcelona (BCN)&fecha=2025-02-27",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "origen",
+									"value": "Seattle (SEA)"
+								},
+								{
+									"key": "destino",
+									"value": "Barcelona (BCN)"
+								},
+								{
+									"key": "fecha",
+									"value": "2025-02-27"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:41:06 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "126"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"fecha\": \"2025-02-27\",\n        \"id\": 11,\n        \"disponibilidad\": 61,\n        \"horario\": \"14:55:00\",\n        \"origen\": \"Seattle (SEA)\",\n        \"destino\": \"Barcelona (BCN)\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Autenticacion - Creacion de usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Stefano\",\r\n    \"correo\" : \"sisuarezh@gmail.com\",\r\n    \"contraseña\" : \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Creacion de usuario",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\" : \"Luis\",\r\n    \"correo\" : \"luis92@gmail.com\",\r\n    \"contraseña\" : \"passtwo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:38:11 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "43"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Usuario registrado con éxito\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Autenticacion - Inicio de sesion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"correo\" : \"sisuarezh@gmail.com\",\r\n    \"contraseña\" : \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/token",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Inicio de sesion",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"correo\" : \"luis92@gmail.com\",\r\n    \"contraseña\" : \"passtwo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/token",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:39:25 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "180"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsdWlzOTJAZ21haWwuY29tIiwiZXhwIjoxNzM5MDY4ODI2fQ.aG-rhY8seYhZHOqVynLdSTxfFf36eBac_uxkWoPdP0I\",\n    \"token_type\": \"bearer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Reservar Vuelo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaXN1YXJlemhAZ21haWwuY29tIiwiZXhwIjoxNzM5MDYyMTA4fQ.RhW3Qz2Q5yPY-O65ctgdO9U0LCN0P1J-1_C8eDBMoo8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario_id\" : 6,\r\n    \"vuelo_id\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reservas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reservas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Reservar Vuelo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario_id\" : 7,\r\n    \"vuelo_id\" : 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reservas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reservas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:43:54 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "32"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Reserva confirmada\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Cancelar Reserva",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaXN1YXJlemhAZ21haWwuY29tIiwiZXhwIjoxNzM5MDYyMTA4fQ.RhW3Qz2Q5yPY-O65ctgdO9U0LCN0P1J-1_C8eDBMoo8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/reservas/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reservas",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Cancelar Reserva",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/reservas/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"reservas",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:45:49 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "31"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"mensaje\": \"Reserva cancelada\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Listar Reservas de Usuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzaXN1YXJlemhAZ21haWwuY29tIiwiZXhwIjoxNzM5MDYyMTA4fQ.RhW3Qz2Q5yPY-O65ctgdO9U0LCN0P1J-1_C8eDBMoo8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/usuarios/6/reservas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"usuarios",
+						"6",
+						"reservas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Evidencia - Listar Reservas de Usuario",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/usuarios/7/reservas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"usuarios",
+								"7",
+								"reservas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 09 Feb 2025 02:47:15 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "181"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"vuelo_id\": 12,\n        \"estado\": \"confirmada\",\n        \"usuario_id\": 7\n    },\n    {\n        \"id\": 7,\n        \"vuelo_id\": 15,\n        \"estado\": \"confirmada\",\n        \"usuario_id\": 7\n    },\n    {\n        \"id\": 8,\n        \"vuelo_id\": 20,\n        \"estado\": \"confirmada\",\n        \"usuario_id\": 7\n    }\n]"
+				}
+			]
+		}
+	]
+}

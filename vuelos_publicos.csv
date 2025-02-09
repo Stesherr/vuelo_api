@@ -1,0 +1,71 @@
+Origen,Destino,Fecha,Horario,Disponibilidad
+Denver (DEN),Madrid (MAD),2025-02-18,00:20,137
+Chicago (ORD),Frankfurt (FRA),2025-02-20,15:19,46
+San Francisco (SFO),Tokyo Narita (NRT),2025-02-14,03:03,142
+Chicago (ORD),Tokyo Haneda (HND),2025-02-28,03:34,189
+Seattle (SEA),Barcelona (BCN),2025-02-27,14:55,61
+Houston (IAH),Sydney (SYD),2025-02-11,22:43,62
+Miami (MIA),Madrid (MAD),2025-02-15,11:21,174
+Atlanta (ATL),Paris Charles de Gaulle (CDG),2025-02-11,12:30,108
+Denver (DEN),Sydney (SYD),2025-02-23,07:38,68
+Seattle (SEA),Barcelona (BCN),2025-03-04,09:08,130
+Atlanta (ATL),Tokyo Narita (NRT),2025-03-10,01:26,102
+Los Angeles (LAX),Dubai (DXB),2025-02-10,14:01,123
+Chicago (ORD),London Heathrow (LHR),2025-02-13,00:23,54
+Los Angeles (LAX),Tokyo Haneda (HND),2025-02-21,17:57,61
+Los Angeles (LAX),Madrid (MAD),2025-03-10,05:16,98
+Los Angeles (LAX),Tokyo Narita (NRT),2025-03-09,05:40,11
+Dallas (DFW),Tokyo Narita (NRT),2025-03-05,16:23,28
+Houston (IAH),Barcelona (BCN),2025-03-08,06:56,177
+Dallas (DFW),Amsterdam (AMS),2025-02-16,14:52,167
+Los Angeles (LAX),Tokyo Haneda (HND),2025-02-19,00:52,93
+Seattle (SEA),Paris Charles de Gaulle (CDG),2025-03-04,15:14,83
+Atlanta (ATL),Tokyo Haneda (HND),2025-03-01,17:38,78
+Miami (MIA),Frankfurt (FRA),2025-03-02,14:39,153
+New York (JFK),Frankfurt (FRA),2025-02-11,19:40,183
+Houston (IAH),Frankfurt (FRA),2025-03-04,04:07,176
+Denver (DEN),Amsterdam (AMS),2025-02-19,18:40,49
+Chicago (ORD),Amsterdam (AMS),2025-02-15,02:35,93
+Dallas (DFW),Paris Charles de Gaulle (CDG),2025-03-02,03:36,69
+New York (JFK),Amsterdam (AMS),2025-02-11,08:31,32
+New York (JFK),Dubai (DXB),2025-02-12,04:55,174
+Chicago (ORD),Dubai (DXB),2025-02-12,01:57,90
+San Francisco (SFO),Paris Charles de Gaulle (CDG),2025-02-16,08:19,99
+Denver (DEN),Paris Charles de Gaulle (CDG),2025-02-16,22:48,169
+San Francisco (SFO),Madrid (MAD),2025-03-11,03:13,174
+Seattle (SEA),Madrid (MAD),2025-02-22,22:29,105
+Chicago (ORD),Tokyo Narita (NRT),2025-03-05,23:42,53
+Houston (IAH),Tokyo Haneda (HND),2025-02-14,09:17,42
+Denver (DEN),Tokyo Haneda (HND),2025-02-24,19:16,133
+Houston (IAH),Amsterdam (AMS),2025-02-15,14:52,105
+San Francisco (SFO),Madrid (MAD),2025-03-01,23:37,134
+Dallas (DFW),Tokyo Haneda (HND),2025-02-21,15:06,147
+Chicago (ORD),Paris Charles de Gaulle (CDG),2025-02-25,06:49,12
+San Francisco (SFO),Paris Charles de Gaulle (CDG),2025-02-21,03:48,64
+Seattle (SEA),Paris Charles de Gaulle (CDG),2025-02-12,12:45,61
+Chicago (ORD),Sydney (SYD),2025-02-26,16:58,35
+Miami (MIA),Sydney (SYD),2025-02-13,17:48,75
+Atlanta (ATL),Frankfurt (FRA),2025-03-01,16:14,35
+Houston (IAH),Frankfurt (FRA),2025-02-26,22:37,34
+Atlanta (ATL),Amsterdam (AMS),2025-02-22,13:23,121
+Miami (MIA),Dubai (DXB),2025-02-26,04:02,176
+Los Angeles (LAX),Tokyo Narita (NRT),2025-02-21,19:49,177
+Seattle (SEA),Tokyo Narita (NRT),2025-03-01,11:35,53
+Seattle (SEA),Dubai (DXB),2025-02-24,15:14,25
+Los Angeles (LAX),Madrid (MAD),2025-02-25,23:53,44
+San Francisco (SFO),Tokyo Haneda (HND),2025-02-12,07:07,35
+San Francisco (SFO),Dubai (DXB),2025-02-18,05:05,36
+Atlanta (ATL),Barcelona (BCN),2025-03-10,03:35,49
+Denver (DEN),London Heathrow (LHR),2025-02-24,22:17,126
+Atlanta (ATL),Dubai (DXB),2025-02-22,19:18,174
+Houston (IAH),Amsterdam (AMS),2025-02-12,07:01,142
+Denver (DEN),Tokyo Haneda (HND),2025-02-14,01:04,81
+Atlanta (ATL),Tokyo Narita (NRT),2025-02-10,09:27,38
+New York (JFK),Tokyo Narita (NRT),2025-03-10,19:17,114
+Denver (DEN),Dubai (DXB),2025-03-04,00:15,103
+Los Angeles (LAX),Frankfurt (FRA),2025-02-23,21:30,194
+Seattle (SEA),Barcelona (BCN),2025-03-07,08:12,189
+Miami (MIA),Tokyo Narita (NRT),2025-02-16,07:58,54
+Los Angeles (LAX),London Heathrow (LHR),2025-02-24,02:08,162
+Los Angeles (LAX),Tokyo Haneda (HND),2025-03-08,01:49,41
+Houston (IAH),Amsterdam (AMS),2025-03-10,13:36,42
